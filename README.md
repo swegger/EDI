@@ -6,7 +6,7 @@ Jupyter notebook for the analysis of speaker data from a public google sheets do
 
 Requires: gspread, pandas
 
-Notes on gspread: requires an api key from google to access open that are open to the public (e.g. anyone with the link can access). To obtain a key:
+Notes on gspread: requires an api key from google to access sheets that are open to the public (e.g. anyone with the link can access). To obtain a key:
 
 1) Enable API Access for a Project if you haven’t done it yet.
 

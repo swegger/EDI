@@ -1,7 +1,7 @@
 ## README
 EDI repository contains basic code for analysis of EDI data for the department of Neurobiology at Duke.
 
-# speakerAnalysis
+### speakerAnalysis
 Jupyter notebook for the analysis of speaker data from a public google sheets document. Uses gspread to collect import data from the desired google sheet loads data into a pandas DataFrame.
 
 Requires: gspread, pandas

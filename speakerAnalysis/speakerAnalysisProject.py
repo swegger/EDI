@@ -79,6 +79,16 @@ def genSankey(df,cat_cols=[],title='Sankey Diagram'):
             colorNumList.append(4)
         elif re.search('NIH',labelList[colori]):
             colorNumList.append(5)
+        elif re.search('Harvard',labelList[colori]):
+            colorNumList.append(0)
+        elif re.search('UCSF',labelList[colori]):
+            colorNumList.append(1)
+        elif re.search('Caltech',labelList[colori]):
+            colorNumList.append(4)
+        elif re.search('Yale',labelList[colori]):
+            colorNumList.append(5)
+        elif re.search('Columbia',labelList[colori]):
+            colorNumList.append(3)
         else:
             colorNumList.append(2)
             

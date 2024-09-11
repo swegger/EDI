@@ -71,18 +71,18 @@ def genSankey(df,cat_cols=[],title='Sankey Diagram',colorScheme='category'):
     colorNumList = []
     if colorScheme == 'category':
         colorPalette = [
-        '#636EFA',
-        '#EF553B',
-        '#00CC96',
-        '#AB63FA',
-        '#FFA15A',
-        '#19D3F3',
-        '#FF6692',
-        '#B6E880',
-        '#FF97FF',
-        '#FECB52',
-        '#FFE873',
-        ]
+            '#636EFA',
+            '#EF553B',
+            '#00CC96',
+            '#AB63FA',
+            '#FFA15A',
+            '#19D3F3',
+            '#FF6692',
+            '#B6E880',
+            '#FF97FF',
+            '#FECB52',
+            '#FFE873',
+            ]
         for colori in range(len(labelList)):
             if re.search('R1',labelList[colori]):
                 colorNumList.append(0)
@@ -171,3 +171,6 @@ def genSankey(df,cat_cols=[],title='Sankey Diagram',colorScheme='category'):
        
     fig = dict(data=[data], layout=layout)
     return fig
+
+def conditionalRelationships(df,targetColumn,conditionalColumn,conditionalValue):
+    return df.loc[df[conditionalColumn] == conditionalValue,targetColumn]
